@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+   int quantity_of_laptops,price_of_laptops,quantity_of_headphones,price_of_headphones,quantity_of_mobile_charger,price_of_mobile_charger,total,tax_amount,final_amount;
+   printf("quantity of laptops=");
+   scanf("%d",&quantity_of_laptops);
+   
+   printf("price of laptops=");
+   scanf("%d",&price_of_laptops);
+   
+   printf("Quantity of headphones= ");
+   scanf("%d",&quantity_of_headphones);
+   
+   printf("price of headphones=");
+   scanf("%d",&price_of_headphones);
+   
+   printf("quantity of mobile charger=");
+   scanf("%d",&quantity_of_mobile_charger);
+   
+   printf("price of mobile charger=");
+   scanf("%d",&price_of_mobile_charger);
+   
+   total=(quantity_of_laptops*price_of_laptops)+(quantity_of_headphones*price_of_headphones)+(quantity_of_mobile_charger*price_of_mobile_charger);
+   tax_amount=total*10/100;
+   final_amount=total+tax_amount;
+   
+   printf("total=%d\ntax amount=%d\nfinal amount=%d",total,tax_amount,final_amount);
+   
+   return 0;
+}
+   
+   
+   OUT PUT :
+
+quantity of laptops=2
+price of laptops=60000
+Quantity of headphones= 1
+price of headphones=2000
+quantity of mobile charger=1
+price of mobile charger=500
+total=122500
+tax amount=12250
+final amount=134750
