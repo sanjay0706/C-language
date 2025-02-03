@@ -1,0 +1,44 @@
+// SANJAY PROVISIONAL STORE
+#include <stdio.h>
+
+int main() {
+   int quantity_of_rice,price_of_rice,quantity_of_sugar,price_of_sugar,quantity_of_oil,price_of_oil,total,tax_amount,final_amount;
+   printf("quantitity of rice=");
+   scanf("%d",&quantity_of_rice);
+   
+   printf("price of rice=");
+   scanf("%d",&price_of_rice);
+   
+   printf("Quantity of sugar= ");
+   scanf("%d",&quantity_of_sugar);
+   
+   printf("price of sugar=");
+   scanf("%d",&price_of_sugar);
+   
+   printf("quantity of oil=");
+   scanf("%d",&quantity_of_oil);
+   
+   printf("price of oil=");
+   scanf("%d",&price_of_oil);
+   
+   total=(quantity_of_rice*price_of_rice)+(quantity_of_sugar*price_of_sugar)+(quantity_of_oil*price_of_oil);
+   tax_amount=total*5/100;
+   final_amount=total+tax_amount;
+   
+   printf("total=%d\ntax amount=%d\nfinal amount=%d",total,tax_amount,final_amount);
+   
+   return 0;
+}
+   
+   
+   OUT PUT:
+
+quantitity of rice=2
+price of rice=50
+Quantity of sugar= 3
+price of sugar=46
+quantity of oil=2
+price of oil=280
+total=798
+tax amount=39
+final amount=837
