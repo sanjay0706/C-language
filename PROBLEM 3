@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int USD,no_of_USD,total;
+    printf("USD=");
+    scanf("%d", &USD);
+    
+    printf("no_of_USD=");
+    scanf("%d" , &no_of_USD);
+    
+    total=(USD*no_of_USD);
+    printf("total=%d",total);
+}
+
+OUT PUT:
+USD=83
+no_of_USD=100
+total=8300
