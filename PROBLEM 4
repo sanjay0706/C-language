@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int initial_balance,deposit_amount,withdraw_amount,final_balance;
+    printf("initial balance=");
+    scanf("%d" ,&initial_balance);
+    
+    printf("deposit amount=");
+    scanf("%d" ,&deposit_amount );
+    
+    printf("withdeaw amount=");
+    scanf("%d",&withdraw_amount);
+    
+    final_balance=initial_balance+deposit_amount-withdraw_amount;
+    printf("final balance=%d",final_balance);
+    
+    return 0;
+}
+
+OUT PUT:
+initial balance=5000
+deposit amount=2000
+withdeaw amount=1500
+final balance=5500
