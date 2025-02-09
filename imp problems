@@ -1,0 +1,93 @@
+#include <stdio.h>
+
+int main() {
+ int num,rev=0,rem,sum=0;
+ printf("enter the number to get reverse of it=");
+ scanf("%d",&num);
+ while(num>0)
+ {
+     rem=num%10;
+     rev=rev*10+rem;
+     num=num/10;
+     sum = sum +rem;
+     
+ }
+     printf("\nreverse of given number=%d",rev);
+     printf("\nsum of given numbers =%d",sum);
+     
+ 
+ return 0;
+}
+
+out put:
+enter the number to get reverse of it=987
+
+reverse of given number=789
+sum of given numbers =24
+
+=== Code Execution Successful ===
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+#include <stdio.h>
+
+int main() {
+ int num,rev=0,rem,temp;
+ printf("enter the number to get reverse of it=");
+ scanf("%d",&num);
+ temp=num;
+ 
+ while(num>0)
+ {
+     rem=num%10;
+     rev=rev*10+rem;
+     num=num/10;
+ }
+     printf("\nreverse of given number=%d\n",rev);
+     
+     if(rev==temp)
+     {
+         printf("it is a palindrome \n");
+         
+     }
+     else{
+         printf("it is not palindrome\n");
+     }
+ 
+ return 0;
+}
+
+out put:
+enter the number to get reverse of it=787
+
+reverse of given number=787
+it is a palindrome 
+
+
+=== Code Execution Successful ===
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+#include <stdio.h>
+
+int main() {
+ int num,rem,sum=0,temp;
+ printf("enter the number =");
+ scanf("%d",&num);
+ temp=num;
+ 
+ while(num>0)
+ {
+     rem=num%10;
+     sum = sum +rem*rem*rem;
+     num=num/10;
+}
+     if(sum==temp)
+     { printf("it is armstrong");}
+     else{
+         printf("it is not armstrong");
+     }
+     return 0;
+}
+out put:
+
+enter the number =153    ,     it will works on only the following numbers= 153,370,371,407
+it is armstrong
+
+=== Code Execution Successful ===
