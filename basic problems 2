@@ -1,0 +1,194 @@
+#include<stdio.h>
+int main()
+{
+    int n,evensum=0,oddsum=0;
+    int i;
+    printf("enter a number=");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+    {
+        if(i%2==0)
+        {
+            evensum+=i;
+        }
+        else if(i%2!=0)
+        {
+            oddsum+=i;
+            
+        }
+     }
+     printf("even sum=%d\n",evensum);
+        printf("odd sum=%d\n",oddsum);
+    return 0;
+}
+
+output
+enter a number=5
+even sum=6
+odd sum=9
+_______________________________________________________________________________________________________________________________________________________________________
+
+#include<stdio.h>
+int main()
+{
+    int i,n,sum=0;
+    printf("enter a number=");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+    
+    {
+        printf("%d\n",i);
+        sum+=i;
+    }
+    printf("sum of given natural numbers=%d\n",sum);
+    return 0;
+}
+
+out put
+enter a number=9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+sum of given natural numbers=45
+___________________________________________________________________________________________________________________________________________________________________________
+#include<stdio.h>
+int main()
+{
+    int i=0,sum=0,n;
+    printf("enter the value of n=");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+       printf("%d\n",i);
+        
+        sum+=i;
+        i++;
+    }
+    printf("sum of given numbers=%d\n",sum);
+}
+
+out put
+enter the value of n=9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+sum of given numbers=45
+____________________________________________________________________________________________________________________________________________________________________
+#include<stdio.h>
+int main()
+{
+    int i,n,flag=0;
+    printf("enter a number=");
+    scanf("%d",&n);
+    if(n==0||n==1)
+    flag=1;
+    for(i=2;i<=n/2;i++)
+    {
+    if(n%i==0)
+    {
+        flag=1;
+        break;
+    }
+    }
+    if(flag==0)
+    {
+        printf("%d is a prime number",n);
+    }
+    else
+    {
+        printf("%d is not a prime number",n);
+    }
+    return 0;
+    
+}
+out put
+enter a number=11
+11 is a prime number
+_______________________________________________________________________________________________________________________________________________________________________
+
+#include<stdio.h>
+int main()
+{
+    int i=2,n,flag=0;
+    printf("enter a number=");
+    scanf("%d",&n);
+    if(n==0||n==1)
+    flag=1;
+    while(i<=n/2)
+    {
+        if(n%i==0)
+        {
+            flag=1;
+            break;
+        }
+        i++;
+    }
+    if(flag==0)
+    {
+        printf("%d is a prime number",n);
+    }
+    else
+    {
+        printf("%d is not a prime number",n);
+    }
+    return 0;
+}
+
+output
+enter a number=7
+7 is a prime number
+____________________________________________________________________________________________________________________________________________________________________________________
+#include<stdio.h>
+int main()
+{
+    int i,n,factorial=1;
+    printf("enter a value=");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        factorial=factorial*i;
+    }
+    printf("factorial of given number %d=%d\n",n,factorial);
+    return 0;
+}
+out put
+enter a value=6
+factorial of given number 6=720
+______________________________________________________________________________________________________________________________________________________________________________________
+#include<stdio.h>
+int main()
+{
+    char l='e';
+    
+    if(l>='a'&&l<='z'
+)
+    {
+        if(l=='a'||l=='e'||l=='i'||l=='o'||l=='u')
+        {
+            printf("the given character is vowel");
+        }
+        else
+        {
+            printf("the given character is consonent");
+        }
+    }
+    return 0;
+}
+out put
+the given character is vowel
+___________________________________________________________________________________________________________________________________________________________________________________________
+
